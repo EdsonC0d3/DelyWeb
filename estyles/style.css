@@ -95,8 +95,8 @@ body{
     position: fixed;
     top: 0;
     right: -400px; /* Oculto por defecto */
-    width: 340px;
-    height: 700px;
+    width: 300px;
+    height: 600px;
     background-color: #fff;
     box-shadow: -5px 0 15px rgba(19, 9, 9, 0.3);
     z-index: 1900;
@@ -110,18 +110,22 @@ body{
 }
 
 .cart-header {
-    padding: 14px;
+    padding: 13px;
     background-color: #303030;
-    color: white;
     display: flex;
     box-shadow: 0 0 8px #333;
     justify-content: space-between;
     align-items: center;
 }
+.cart-header h2{
+    color: #bdb2b2;
+    font-size: 30px;
+}
 
 .fa-notdog {
     cursor: pointer;
     font-size: 20px;
+    margin-bottom: auto;
 }
 
 .cart-body {
@@ -146,7 +150,7 @@ body{
 }
 /*generar efecto e estilo al icono limpiar*/
 .remove-item-btn {
-    color: rgb(15, 14, 14);
+    color: rgb(211, 34, 34);
     cursor: pointer;
     font-size: 19px;
     transition: .5s;
@@ -156,9 +160,10 @@ body{
 }
 
 .cart-footer {
-    padding: 20px;
+    padding: 10px;
     border-top: 1px solid #ccc;
     background-color: #f9f9f9;
+    box-shadow: 0 0 10px #303030;
 }
 
 .total-container {
@@ -168,6 +173,9 @@ body{
     font-weight: 600;
     margin-bottom: 11px;
     letter-spacing: 1px;
+}
+.total-container span{
+    color: #303030;
 }
 
 /*--boton pago---*/
@@ -186,7 +194,8 @@ body{
 }
 
 .checkout-btn:hover {
-    background-color: #388eb9;
+    background-color: #49570d;
+    box-shadow: 0 0 10px #212306;
 }
 
 
@@ -409,7 +418,7 @@ span{
     .menu label{
         display: initial;
     }
-    .menu .navbar{
+    .menu .navbar-navbar{
         position: absolute;
         top: 100%;
         left: 0;
@@ -417,11 +426,11 @@ span{
         background-color: #6e6060;
         display: none;
     }
-    .menu .navbar ul li{
+    .menu .navbar-navbar ul li{
         width: 100%;
     }
     
-    #menu:checked ~ .navbar{
+    #menu:checked ~ .navbar-navbar{
         display: initial;
     }
 
@@ -442,6 +451,7 @@ span{
     }
     .header-img{
         width: 100%;
+        margin-top: 12px;
     }
     .header-img img{
         width: 300px;
